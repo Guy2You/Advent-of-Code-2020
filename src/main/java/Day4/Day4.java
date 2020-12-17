@@ -14,8 +14,8 @@ import java.util.regex.Pattern;
 
 public class Day4
 {
-	private static List<Map<String, String>> credentialsList;
 	private static final String[] VALID_CREDENTIALS = {"byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid", "cid"};
+	private static List<Map<String, String>> credentialsList;
 
 	public static void main(String[] args) throws Exception
 	{

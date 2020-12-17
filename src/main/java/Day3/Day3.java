@@ -36,7 +36,7 @@ public class Day3
 
 	public static long part2()
 	{
-		int[][] slopes = {{1,1},{3,1},{5,1},{7,1},{1,2}};
+		int[][] slopes = {{1, 1}, {3, 1}, {5, 1}, {7, 1}, {1, 2}};
 		long product = 1;
 		for (int[] slope : slopes) product *= traverse(slope[0], slope[1]);
 		return product;
