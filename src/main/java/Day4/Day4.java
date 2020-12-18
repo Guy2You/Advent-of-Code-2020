@@ -131,10 +131,10 @@ public class Day4
 	{
 		Pattern credentialPattern = Pattern.compile("[a-z]+:[#a-zA-Z0-9]+");
 		Matcher credentialMatcher = credentialPattern.matcher(credentials);
-		HashMap<String, String> credentialMap = new HashMap<String, String>();
+		HashMap<String, String> credentialMap = new HashMap<>();
 		while (credentialMatcher.find())
 		{
-			String cred = (credentialMatcher.group());
+			String cred = credentialMatcher.group();
 			if (Arrays.stream(VALID_CREDENTIALS).anyMatch(c -> c.equals(cred.substring(0, 3))))
 			{
 				credentialMap.put(cred.substring(0, 3), cred.substring(4));
